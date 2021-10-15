@@ -3,43 +3,18 @@
  */
 package ec.edu.espol.workshops;
 
+import java.util.Scanner;
+
 public class CarInsurance {
 	private int age;
 	private char sex;
-	private boolean maried;
+	private boolean married;
 	
-	public CarInsurance(int age, char, sex, boolean married) {
+	
+	public CarInsurance(int age, char sex, boolean married) {
 		this.age = age;
 		this.sex = sex;
 		this.married = married;
-	}
-	
-	public float premio(CarInsurance customer) {
-		float base = 500.00;
-		if(customer.getAge()<25 && customer.getSex()=='M' && !customer.getMarried()) {
-			base = base + 1500;
-		}else if(customer.getSex()=='F' || customer.getMarried()){
-			base = base - 200;
-		}else if(customer.getAge()>45 && customer.getAge()<65) {
-			base = base - 100;
-		}
-		return base;
-	}
-	
-	public CarInsurance createCarInsurance(int age, char, sex, boolean married, boolean validCard) {
-		CarInsurance ci = null;
-		if(age >= 80) {
-			System.out.println('Sorry, we cannot sell car insurance to people over 80 years old.');
-			return ci;
-		}else if(!validCard) {
-			System.out.println('Sorry, your driving licence is invalid.');
-			return ci;
-		}
-		return ci = new CarInsurance(age, sex, married);
-	}
-	
-	public static void main(String[] args) {
-		System.out.println("Hello world!");
 	}
 	
 	public int getAge() {
@@ -53,5 +28,65 @@ public class CarInsurance {
 	public boolean getMarried() {
 		return this.married;
 	}
+	
+	
+	public String toString() {
+		return "\nage: " + this.age + " sex: " + this.sex + " married: " + this.married; 
+	}
+	
+	public int premiumCalculation(CarInsurance customer) {
+		int base = 500;
+		int premiumValue = 0;
+		if(customer.getAge()<25 && customer.getSex() == 'M' && !customer.getMarried()) {
+			premiumValue = base + 1500;
+		}else if(customer.getSex() == 'F' || customer.getMarried()){
+			premiumValue = base - 200;
+		}else if(customer.getAge()>=45 && customer.getAge()<65) {
+			premiumValue = base - 100;
+		}
+		return premiumValue;
+	}
+	
+	public boolean isValidCarInsurance(CarInsurance customer, boolean validCard) {
+		if(customer.getAge() >= 80) {
+			System.out.println("Sorry, we cannot sell car insurance to people over 80 years old.");
+			return false;
+		}else if(!validCard) {
+			System.out.println("Sorry, your driving licence is invalid.");
+			return false;
+		}else {
+			return true;
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		int premiumValue = 0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("     *****   Premium Calculation   *****");
+		System.out.println("	Please input age: ");
+		int age = sc.nextInt();
+		System.out.println("	Please input sex (M) or (F): ");
+		char sex = sc.next().charAt(0);
+		System.out.println("	Please indicate if you are married (true) or not (false): ");
+		boolean married = sc.nextBoolean();
+		System.out.println("	Please confirm if the driving license is valid (true) or invalid (false): ");
+		boolean validCard = sc.nextBoolean();
+		//System.out.println("is valid: "+ validCard);
+		CarInsurance premium = new CarInsurance(age, sex, married);
+		//System.out.println("objeto creado: " + premium);
+		if (premium.isValidCarInsurance(premium, validCard)) {
+			premiumValue = premium.premiumCalculation(premium);
+			System.out.println("   ------------------------------------------ ");
+			System.out.println("     The car insurance premium is: $ " + premiumValue);
+			System.out.println("   ------------------------------------------ ");
+		}
+		
+		
+		
+	}
+	
+	
+	
 	
 }
