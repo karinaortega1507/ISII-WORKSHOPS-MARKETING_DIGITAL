@@ -9,7 +9,7 @@ public class CarInsurance {
 	private int age;
 	private char sex;
 	private boolean married;
-	private final int BASE_PREMIUM = 500;
+	private static int BASE_PREMIUM = 500;
 	
 	public CarInsurance(int age, char sex, boolean married) {
 		this.age = age;
@@ -43,7 +43,7 @@ public class CarInsurance {
 	}
 	
 	public int getBasePremium() {
-		return this.BASE_PREMIUM;
+		return CarInsurance.BASE_PREMIUM;
 	}
 	
 	//METHODS
@@ -53,7 +53,7 @@ public class CarInsurance {
 	}
 	
 	public int premiumCalculation(CarInsurance customer) {
-		int premiumValue = this.BASE_PREMIUM;
+		int premiumValue = CarInsurance.BASE_PREMIUM;
 		if(customer.getAge()<25 && customer.getSex() == 'M' && !customer.getMarried()) {
 			premiumValue += 1500;
 		}else if(customer.getSex() == 'F' || customer.getMarried()){
@@ -86,9 +86,11 @@ public class CarInsurance {
 				return 0;
 			}
 			return -1;	
-		} catch(Exception ex) {
-			return -1;
-		}	
+		} catch (RuntimeException e) {
+			throw new RuntimeException("Couldn't process stuff", e);
+		} catch (Exception e) {
+			throw new RuntimeException("Something failed!", e);
+		}
 	}
 	
 	public static boolean convertCharToBool(char arg) {
@@ -111,6 +113,7 @@ public class CarInsurance {
 		char married = Character.toUpperCase(sc.next().charAt(0));
 		System.out.print("	Please confirm if the driving license is valid (T) or invalid (F): ");
 		char validCard = Character.toUpperCase(sc.next().charAt(0));
+		sc.close();
 		
 		if(CarInsurance.checkInformation(age, sex, married, validCard) >= 0) {
 			CarInsurance premium = new CarInsurance(Integer.parseInt(age), sex, CarInsurance.convertCharToBool(married));
@@ -124,7 +127,8 @@ public class CarInsurance {
 			System.out.println("   ------------------------------------------ ");
 			System.out.println("	Invalid data. Cannot proceed with calculation");
 			System.out.println("   ------------------------------------------ ");
-		}	
+		}
+		
 	}
 	
 	public static void main(String[] args) {
