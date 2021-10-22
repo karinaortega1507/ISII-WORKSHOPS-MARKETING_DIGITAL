@@ -1,0 +1,479 @@
+[1;33m*[0m file: [1;37msrc/main/java/ec/edu/espol/workshops/CarInsurance.java[0m
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m8:135[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Class comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m8:135[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Class comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m9:9[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Field comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m9:9[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Field comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m10:10[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Field comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m10:10[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Field comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m11:11[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Field comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m11:11[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Field comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m12:12[0m
+[0;32m    rule: [0mBeanMembersShouldSerialize
+[0;32m    msg:  [0mBeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m12:12[0m
+[0;32m    rule: [0mBeanMembersShouldSerialize
+[0;32m    msg:  [0mBeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m12:12[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Field comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m12:12[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Field comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m12:12[0m
+[0;32m    rule: [0mFinalFieldCouldBeStatic
+[0;32m    msg:  [0mFinalFieldCouldBeStatic: This final field could be made static
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m12:12[0m
+[0;32m    rule: [0mFinalFieldCouldBeStatic
+[0;32m    msg:  [0mFinalFieldCouldBeStatic: This final field could be made static
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m14:18[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Public method and constructor comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m14:18[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Public method and constructor comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m45:47[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Public method and constructor comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m45:47[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Public method and constructor comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m55:65[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Public method and constructor comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m55:65[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Public method and constructor comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m67:81[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Public method and constructor comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m67:81[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Public method and constructor comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m68:68[0m
+[0;32m    rule: [0mAvoidLiteralsInIfCondition
+[0;32m    msg:  [0mAvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m68:68[0m
+[0;32m    rule: [0mAvoidLiteralsInIfCondition
+[0;32m    msg:  [0mAvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m69:69[0m
+[0;32m    rule: [0mAvoidDuplicateLiterals
+[0;32m    msg:  [0mAvoidDuplicateLiterals: The String literal "   ------------------------------------------ " appears 8 times in this file; the first occurrence is on line 69
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m69:69[0m
+[0;32m    rule: [0mAvoidDuplicateLiterals
+[0;32m    msg:  [0mAvoidDuplicateLiterals: The String literal "   ------------------------------------------ " appears 8 times in this file; the first occurrence is on line 69
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m69:69[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m69:69[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m70:70[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m70:70[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m71:71[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m71:71[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m74:74[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m74:74[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m75:75[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m75:75[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m76:76[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m76:76[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m83:92[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Public method and constructor comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m83:92[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Public method and constructor comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m89:89[0m
+[0;32m    rule: [0mAvoidCatchingGenericException
+[0;32m    msg:  [0mAvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m89:89[0m
+[0;32m    rule: [0mAvoidCatchingGenericException
+[0;32m    msg:  [0mAvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m94:100[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Public method and constructor comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m94:100[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Public method and constructor comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m95:97[0m
+[0;32m    rule: [0mDataflowAnomalyAnalysis
+[0;32m    msg:  [0mDataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'argBool' (lines '95'-'97').
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m95:97[0m
+[0;32m    rule: [0mDataflowAnomalyAnalysis
+[0;32m    msg:  [0mDataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'argBool' (lines '95'-'97').
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m96:96[0m
+[0;32m    rule: [0mAvoidLiteralsInIfCondition
+[0;32m    msg:  [0mAvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m96:96[0m
+[0;32m    rule: [0mAvoidLiteralsInIfCondition
+[0;32m    msg:  [0mAvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m102:128[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Public method and constructor comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m102:128[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Public method and constructor comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m103:118[0m
+[0;32m    rule: [0mDataflowAnomalyAnalysis
+[0;32m    msg:  [0mDataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'premiumValue' (lines '103'-'118').
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m103:118[0m
+[0;32m    rule: [0mDataflowAnomalyAnalysis
+[0;32m    msg:  [0mDataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'premiumValue' (lines '103'-'118').
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m103:128[0m
+[0;32m    rule: [0mDataflowAnomalyAnalysis
+[0;32m    msg:  [0mDataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'premiumValue' (lines '103'-'128').
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m103:128[0m
+[0;32m    rule: [0mDataflowAnomalyAnalysis
+[0;32m    msg:  [0mDataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'premiumValue' (lines '103'-'128').
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m103:103[0m
+[0;32m    rule: [0mUnusedAssignment
+[0;32m    msg:  [0mUnusedAssignment: The initializer for variable 'premiumValue' is never used (overwritten on line 118)
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m103:103[0m
+[0;32m    rule: [0mUnusedAssignment
+[0;32m    msg:  [0mUnusedAssignment: The initializer for variable 'premiumValue' is never used (overwritten on line 118)
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m104:104[0m
+[0;32m    rule: [0mCloseResource
+[0;32m    msg:  [0mCloseResource: Ensure that resources like this InputStream object are closed after use
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m104:104[0m
+[0;32m    rule: [0mCloseResource
+[0;32m    msg:  [0mCloseResource: Ensure that resources like this InputStream object are closed after use
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m105:105[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m105:105[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m106:106[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.print is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m106:106[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.print is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m108:108[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.print is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m108:108[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.print is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m109:109[0m
+[0;32m    rule: [0mLawOfDemeter
+[0;32m    msg:  [0mLawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m109:109[0m
+[0;32m    rule: [0mLawOfDemeter
+[0;32m    msg:  [0mLawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m110:110[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.print is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m110:110[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.print is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m111:111[0m
+[0;32m    rule: [0mLawOfDemeter
+[0;32m    msg:  [0mLawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m111:111[0m
+[0;32m    rule: [0mLawOfDemeter
+[0;32m    msg:  [0mLawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m112:112[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.print is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m112:112[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.print is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m113:113[0m
+[0;32m    rule: [0mLawOfDemeter
+[0;32m    msg:  [0mLawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m113:113[0m
+[0;32m    rule: [0mLawOfDemeter
+[0;32m    msg:  [0mLawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m119:119[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m119:119[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m120:120[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m120:120[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m121:121[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m121:121[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m124:124[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m124:124[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m125:125[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m125:125[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m126:126[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m126:126[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m130:133[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Public method and constructor comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m130:133[0m
+[0;32m    rule: [0mCommentRequired
+[0;32m    msg:  [0mCommentRequired: Public method and constructor comments are required
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m131:131[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsurance.java[0m:[0;36m131:131[0m
+[0;32m    rule: [0mSystemPrintln
+[0;32m    msg:  [0mSystemPrintln: System.out.println is used
+[0;32m    code: [0mnull
+
+[1;33m*[0m file: [1;37msrc/test/java/ec/edu/espol/workshops/CarInsuranceTest.java[0m
+[0;32m    src:  [0;36mCarInsuranceTest.java[0m:[0;36m4:16[0m
+[0;32m    rule: [0mCommentSize
+[0;32m    msg:  [0mCommentSize: Comment is too large: Too many lines
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsuranceTest.java[0m:[0;36m4:16[0m
+[0;32m    rule: [0mCommentSize
+[0;32m    msg:  [0mCommentSize: Comment is too large: Too many lines
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsuranceTest.java[0m:[0;36m13:13[0m
+[0;32m    rule: [0mCommentSize
+[0;32m    msg:  [0mCommentSize: Comment is too large: Line too long
+[0;32m    code: [0mnull
+
+[0;32m    src:  [0;36mCarInsuranceTest.java[0m:[0;36m13:13[0m
+[0;32m    rule: [0mCommentSize
+[0;32m    msg:  [0mCommentSize: Comment is too large: Line too long
+[0;32m    code: [0mnull
+
+
+
+Summary:
+
+ec.edu.espol.workshops.CarInsurance : 42
+(default).CarInsuranceTest.java : 2
+[1;33m*[0m warnings: [1;37m94[0m
