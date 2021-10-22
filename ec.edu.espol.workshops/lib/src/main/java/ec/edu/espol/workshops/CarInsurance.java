@@ -8,17 +8,10 @@ import java.lang.ClassCastException;
 
 //CAR INSURANCE CLASS 
 public class CarInsurance {
-<<<<<<< HEAD
 	private int age; //AGE NEEDED FOR CAR INSURANCE
 	private char sex; //SEX NEEDED FOR CAR INSURANCE
 	private boolean married; //MARRIED STATUS NEEDED FOR CAR INSURANCE
-	private final int BASE_PREMIUM = 500; //BASE_PREMIUM NEEDED FOR CAR INSURANCE
-=======
-	private int age;
-	private char sex;
-	private boolean married;
-	private static int BASE_PREMIUM = 500;
->>>>>>> fb4496e9db3524783241f87ec5f3c936fcece0c1
+	private static int BASE_PREMIUM = 500; //BASE_PREMIUM NEEDED FOR CAR INSURANCE
 	
 	//CONSTRUCTOR FOR CARINSURANCE
 	public CarInsurance(int age, char sex, boolean married) {
@@ -109,20 +102,12 @@ public class CarInsurance {
 				return 0;
 			}else {
 				return -1;
-			}
-<<<<<<< HEAD
-		}catch(ClassCastException ex) {
-			printInfo(ex.getMessage());
-			return -1;
-		}	
-=======
-			return -1;	
+			}	
 		} catch (RuntimeException e) {
 			throw new RuntimeException("Couldn't process stuff", e);
 		} catch (Exception e) {
 			throw new RuntimeException("Something failed!", e);
 		}
->>>>>>> fb4496e9db3524783241f87ec5f3c936fcece0c1
 	}
 	
 	//CONVERT CHARACTER TYPE TO BOOL TYPE
@@ -147,7 +132,6 @@ public class CarInsurance {
 		printInfo("	Please confirm if the driving license is valid (T) or invalid (F): ");
 		char validCard = Character.toUpperCase(sc.next().charAt(0));
 		sc.close();
-<<<<<<< HEAD
 		if(CarInsurance.checkInformation(age, sex, married, validCard) >= 0) {
 			CarInsurance premium = new CarInsurance(Integer.parseInt(age), sex, CarInsurance.convertCharToBool(married));
 			if (premium.isValidCarInsurance(premium, CarInsurance.convertCharToBool(validCard))) {
@@ -170,23 +154,6 @@ public class CarInsurance {
 	//PRINT OUT SOME INFORMATION
 	public static void printInfo(String string) {
 		System.out.print(string);
-=======
-		
-		if(CarInsurance.checkInformation(age, sex, married, validCard) >= 0) {
-			CarInsurance premium = new CarInsurance(Integer.parseInt(age), sex, CarInsurance.convertCharToBool(married));
-			if (premium.isValidCarInsurance(premium, CarInsurance.convertCharToBool(validCard))) {
-				premiumValue = premium.premiumCalculation(premium);
-				System.out.println("   ------------------------------------------ ");
-				System.out.println("     The car insurance premium is: $ " + premiumValue);
-				System.out.println("   ------------------------------------------ ");
-			} 
-		} else {
-			System.out.println("   ------------------------------------------ ");
-			System.out.println("	Invalid data. Cannot proceed with calculation");
-			System.out.println("   ------------------------------------------ ");
-		}
-		
->>>>>>> fb4496e9db3524783241f87ec5f3c936fcece0c1
 	}
 	
 	//MAIN METHOD OF THE PROGRAM
