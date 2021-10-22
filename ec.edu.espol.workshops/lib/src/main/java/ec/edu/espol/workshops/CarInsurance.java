@@ -17,11 +17,11 @@ public class CarInsurance {
     private int base = 500;
 
     /** 
-     * Construct the class object
+     * Construct the class object.
      * 
-     * @param age user's age
-     * @param sex user gender
-     * @param married user's marital status
+     * @param age user's age.
+     * @param sex user gender.
+     * @param married user's marital status.
      */
     public CarInsurance(int age, char sex, boolean married) {
         this.age = age;
@@ -64,10 +64,10 @@ public class CarInsurance {
     }
 
     /**
-     * Calculate Car Insurance Premium
+     * Calculate Car Insurance Premium.
      * 
-     * @param customer
-     * @return
+     * @param customer Car Insurance owner.
+     * @return Premium value.
      */
     public int premiumCalculation(CarInsurance customer) {
         int premiumValue = base;
@@ -82,11 +82,11 @@ public class CarInsurance {
     }
     
     /**
-     * Validate if the car insurance is valid according to the user's data
+     * Validate if the car insurance is valid according to the user's data.
      * 
-     * @param customer
-     * @param validCard
-     * @return
+     * @param customer Car Insurance owner.
+     * @param validCard driving license entered by the user in the system.
+     * @return truth value that indicates whether the car insurance is valid.
      */
     public boolean isValidCarInsurance(CarInsurance customer, boolean validCard) {
         if (customer.getAge() >= 80) {
@@ -105,13 +105,14 @@ public class CarInsurance {
     }
     
     /**
-     * Validate the information entered by the user
+     * Validate the information entered by the user.
      * 
-     * @param age age entered by the user in the system
-     * @param sex sex entered by the user in the system
-     * @param married marital status entered by the user in the system
-     * @param validCard driving license entered by the user in the system
-     * @return
+     * @param age age entered by the user in the system.
+     * @param sex sex entered by the user in the system.
+     * @param married marital status entered by the user in the system.
+     * @param validCard driving license entered by the user in the system.
+     * 
+     * @return Value 0 if the information is valid, -1 if it is not.
      */
     public static int checkInformation(String age, char sex, char married, char validCard) {
         try {
@@ -125,10 +126,10 @@ public class CarInsurance {
     }
     
     /**
-     * Converts a char value to boolean
+     * Converts a char value to boolean.
      * 
-     * @param arg T or F depending on the boolean value
-     * @return
+     * @param arg T or F depending on the boolean value.
+     * @return boolean
      */
     public static boolean convertCharToBool(char arg) {
         boolean argBool = false;
@@ -145,13 +146,13 @@ public class CarInsurance {
         int premiumValue = 0;
         Scanner sc = new Scanner(System.in);
         System.out.println("     *****   Premium Calculation   *****");
-        System.out.print("	Please input age: ");
+        System.out.print("     Please input age: ");
         String age = sc.next();
-        System.out.print("	Please input sex (M) or (F): ");
+        System.out.print("     Please input sex (M) or (F): ");
         char sex = Character.toUpperCase(sc.next().charAt(0));
-        System.out.print("	Please indicate if you are married (T) or not (F): ");
+        System.out.print("     Please indicate if you are married (T) or not (F): ");
         char married = Character.toUpperCase(sc.next().charAt(0));
-        System.out.print("	Please confirm if the driving license is valid (T) or invalid (F): ");
+        System.out.print("     Please confirm if the driving license is valid (T) or invalid (F): ");
         char validCard = Character.toUpperCase(sc.next().charAt(0));
 
         if (CarInsurance.checkInformation(age, sex, married, validCard) >= 0) {
@@ -165,7 +166,7 @@ public class CarInsurance {
             }
         } else {
             System.out.println("   ------------------------------------------ ");
-            System.out.println("	Invalid data. Cannot proceed with calculation");
+            System.out.println("     Invalid data. Cannot proceed with calculation");
             System.out.println("   ------------------------------------------ ");
         }
         sc.close();
