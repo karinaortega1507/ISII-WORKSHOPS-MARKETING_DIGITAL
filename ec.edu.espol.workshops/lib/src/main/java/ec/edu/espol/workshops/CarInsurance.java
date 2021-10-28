@@ -118,7 +118,6 @@ public class CarInsurance {
 	
 	//INITIALIZE THE CARINSURANCE CLASS FOR CUSTOMER USE AND CHECK INFORMATION
 	public static void initCarInsurance() {
-		int premiumValue = 0;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("     *****   Premium Calculation   *****");
 		printInfo("	Please input age: ");
@@ -133,7 +132,7 @@ public class CarInsurance {
 		if(CarInsurance.checkInformation(age, sex, married, validCard) >= 0) {
 			CarInsurance premium = new CarInsurance(Integer.parseInt(age), sex, CarInsurance.convertCharToBool(married));
 			if (premium.isValidCarInsurance(premium, CarInsurance.convertCharToBool(validCard))) {
-				premiumValue = premium.premiumCalculation(premium);
+				int premiumValue = premium.premiumCalculation(premium);
 				printInfo(
 						"   ------------------------------------------ "
 						+"     The car insurance premium is: $ " + premiumValue
