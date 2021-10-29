@@ -7,171 +7,13 @@ package ec.edu.espol.workshops;
 import java.util.Scanner;
 import java.lang.ClassCastException;
 
-<<<<<<< HEAD
-//CAR INSURANCE CLASS 
-=======
+
+
 /**
  * Class representing car insurance.
  * @author MarketingDigital.
  */
->>>>>>> refs/remotes/origin/Checkstyle
 public class CarInsurance {
-<<<<<<< HEAD
-	private int age; //AGE NEEDED FOR CAR INSURANCE
-	private char sex; //SEX NEEDED FOR CAR INSURANCE
-	private boolean married; //MARRIED STATUS NEEDED FOR CAR INSURANCE
-	private static int BASE_PREMIUM = 500; //BASE_PREMIUM NEEDED FOR CAR INSURANCE
-	
-	//CONSTRUCTOR FOR CARINSURANCE
-	public CarInsurance(int age, char sex, boolean married) {
-		this.age = age;
-		this.sex = sex;
-		this.married = married;
-	}
-	
-	//GETTERS AGE OF CUSTOMER
-	public int getAge() {
-		return this.age;
-	}
-	
-	//SET AGE OF CUSTOMER
-	public void setAge(int age) {
-		this.age = age;
-	}
-	
-	//GET SEX OF CUSTOMER
-	public char getSex() {
-		return this.sex;
-	}
-	
-	//SET SEX OF CUSTOMER
-	public void setSex(char sex) {
-		this.sex = sex;
-	}
-	
-	//GET MARRIED STATUS OF CUSTOMER
-	public boolean getMarried() {
-		return this.married;
-	}
-	
-	//SET MARRIED STATUS OF CUSTOMER
-	public void setMarried(boolean married) {
-		this.married = married;
-	}
-	
-	//GET BASE PREMIUM OF CUSTOMER
-	public int getBasePremium() {
-		return CarInsurance.BASE_PREMIUM;
-	}
-	
-	//CONVERT TO STRING FIELDS OF CUSTOMER
-	@Override
-	public String toString() {
-		return "\nage: " + this.age + " sex: " + this.sex + " married: " + this.married; 
-	}
-	
-	//CALCULATE PREMIUM DEPENDING IN FIELDS OF CUSTOMER
-	public int premiumCalculation(CarInsurance customer) {
-		int premiumValue = CarInsurance.BASE_PREMIUM;
-		if(customer.getAge()<25 && customer.getSex() == 'M' && !customer.getMarried()) {
-			premiumValue += 1500;
-		}else if(customer.getSex() == 'F' || customer.getMarried()){
-			premiumValue -= 200;
-		}else if(customer.getAge()>=45 && customer.getAge()<65) {
-			premiumValue -= 100;
-		}
-		return premiumValue;
-	}
-	
-	//CHECK THE AGE OF CUSTOMER AND LICENSE'VALIDATION FOR INSURANCE
-	public boolean isValidCarInsurance(CarInsurance customer, boolean validCard) {
-		if(customer.getAge() >= 80) {
-			printInfo(
-					"   ------------------------------------------\n"
-					+ "Sorry, we cannot sell car insurance to people over 80 years old.\n"
-					+ "   ------------------------------------------\n"
-			);
-			return false;
-		}else if(!validCard) {
-			printInfo(
-					"   ------------------------------------------\n"
-					+ "Sorry, your driving licence is invalid.\n"
-					+ "   ------------------------------------------\n"
-			);
-			return false;
-		}
-		return true;
-		
-	}
-	
-	//CHECK IF FIELDS OF CUSTOMER ARE CORRECTS 
-	public static int checkInformation(String age, char sex, char married, char validCard) {
-		try {
-			if(Integer.parseInt(age) > 0 && (sex == 'F' || sex == 'M') && (married == 'T' || married == 'F') && (validCard == 'T' || validCard == 'F')) {
-				return 0;
-			}else {
-				return -1;
-			}	
-		} catch (RuntimeException e) {
-			throw new RuntimeException("Couldn't process stuff", e);
-		} catch (Exception e) {
-			throw new RuntimeException("Something failed!", e);
-		}
-	}
-	
-	//CONVERT CHARACTER TYPE TO BOOL TYPE
-	public static boolean convertCharToBool(char arg) {
-		boolean argBool = false;
-		if(arg == 'T') {
-			argBool = true;
-		}
-		return argBool;
-	}
-	
-	//GET CAR INSURANCE FROM A GIVEN CUSTOMER
-	public static void initCarInsurance() {
-		Scanner sc = new Scanner(System.in);
-		printInfo("     *****   Premium Calculation   *****");
-		printInfo("	Please input age: ");
-		String age = sc.next();
-		printInfo("	Please input sex (M) or (F): ");
-		char sex = Character.toUpperCase(sc.next().charAt(0));
-		printInfo("	Please indicate if you are married (T) or not (F): ");
-		char married = Character.toUpperCase(sc.next().charAt(0));
-		printInfo("	Please confirm if the driving license is valid (T) or invalid (F): ");
-		char validCard = Character.toUpperCase(sc.next().charAt(0));
-		sc.close();
-		if(CarInsurance.checkInformation(age, sex, married, validCard) >= 0) {
-			CarInsurance premium = new CarInsurance(Integer.parseInt(age), sex, CarInsurance.convertCharToBool(married));
-			if (premium.isValidCarInsurance(premium, CarInsurance.convertCharToBool(validCard))) {
-				int premiumValue = premium.premiumCalculation(premium);
-				printInfo(
-						"   ------------------------------------------\n"
-						+ "The car insurance premium is: $" + premiumValue + "\n"
-						+ "   ------------------------------------------\n"
-				);
-			}
-		}else {
-			printInfo(
-					"   ------------------------------------------\n"
-					+ "Invalid data. Cannot proceed with calculation\n"
-					+ "   ------------------------------------------\n"
-			);
-		}
-	}
-	
-	//PRINT OUT SOME INFORMATION
-	public static void printInfo(String string) {
-		System.out.print(string);
-	}
-	
-	//MAIN METHOD OF THE PROGRAM
-	public static void main(String[] args) {
-		printInfo("Guardado 1");
-		initCarInsurance();
-	}
-	
-=======
     private int age;
     private char sex;
     private boolean married;
@@ -274,17 +116,20 @@ public class CarInsurance {
      * @param validCard driving license entered by the user in the system.
      * 
      * @return Value 0 if the information is valid, -1 if it is not.
-     */
+     */    
     public static int checkInformation(String age, char sex, char married, char validCard) {
-        try {
-            if (Integer.parseInt(age) > 0 && (sex == 'F' || sex == 'M') && (married == 'T' || married == 'F') && (validCard == 'T' || validCard == 'F')) {
-                return 0;
-            }
-            return -1;
-        } catch (Exception ex) {
-            return -1;
-        }
-    }
+		try {
+			if(Integer.parseInt(age) > 0 && (sex == 'F' || sex == 'M') && (married == 'T' || married == 'F') && (validCard == 'T' || validCard == 'F')) {
+				return 0;
+			}else {
+				return -1;
+			}	
+		} catch (RuntimeException e) {
+			throw new RuntimeException("Couldn't process stuff", e);
+		} catch (Exception e) {
+			throw new RuntimeException("Something failed!", e);
+		}
+	}
     
     /**
      * Converts a char value to boolean.
@@ -340,5 +185,5 @@ public class CarInsurance {
         initCarInsurance();
     }
 
->>>>>>> refs/remotes/origin/Checkstyle
+
 }
