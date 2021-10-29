@@ -12,6 +12,7 @@ import java.lang.ClassCastException;
 /**
  * Class representing car insurance.
  * @author MarketingDigital.
+ * 
  */
 public class CarInsurance {
     private int age;
@@ -25,6 +26,7 @@ public class CarInsurance {
      * @param age user's age.
      * @param sex user gender.
      * @param married user's marital status.
+     * 
      */
     public CarInsurance(int age, char sex, boolean married) {
         this.age = age;
@@ -71,6 +73,7 @@ public class CarInsurance {
      * 
      * @param customer Car Insurance owner.
      * @return Premium value.
+     * 
      */
     public int premiumCalculation(CarInsurance customer) {
         int premiumValue = base;
@@ -90,6 +93,7 @@ public class CarInsurance {
      * @param customer Car Insurance owner.
      * @param validCard driving license entered by the user in the system.
      * @return truth value that indicates whether the car insurance is valid.
+     * 
      */
     public boolean isValidCarInsurance(CarInsurance customer, boolean validCard) {
         if (customer.getAge() >= 80) {
@@ -108,7 +112,24 @@ public class CarInsurance {
     }
     
     /**
-     * Validate the information entered by the user.
+     * validate that the age entered is only a number
+     * 
+     * @param age age entered by the user in the system.
+     * @return Value true if number is valid, false if it is not.
+     * 
+     */    
+    public static boolean validateAge(String age) {
+    	int num;
+    	try {
+    		num = Integer.parseInt(age);
+    		return true;
+    	}catch(Exception e) {
+    		return false;
+    	}
+    }
+     
+    /**
+     * Validate the age entered by the user.
      * 
      * @param age age entered by the user in the system.
      * @param sex sex entered by the user in the system.
@@ -116,9 +137,11 @@ public class CarInsurance {
      * @param validCard driving license entered by the user in the system.
      * 
      * @return Value 0 if the information is valid, -1 if it is not.
-     */    
+     */
     public static int checkInformation(String age, char sex, char married, char validCard) {
 		try {
+			if(!validateAge(age)) return -1;
+			
 			if(Integer.parseInt(age) > 0 && (sex == 'F' || sex == 'M') && (married == 'T' || married == 'F') && (validCard == 'T' || validCard == 'F')) {
 				return 0;
 			}else {
