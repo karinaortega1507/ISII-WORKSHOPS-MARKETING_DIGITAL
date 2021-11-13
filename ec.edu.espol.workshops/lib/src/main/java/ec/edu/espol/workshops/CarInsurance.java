@@ -19,7 +19,10 @@ public class CarInsurance {
     private char sex;
     private boolean married;
     private int base = 500;
+    private int premium;
 
+    public CarInsurance() {}
+    
     /** 
      * Construct the class object.
      * 
@@ -62,6 +65,11 @@ public class CarInsurance {
     public int getBase() {
         return base;
     }
+    
+    public int getPremium() {
+        return this.premium;
+    }
+    
 
     // METHODS
     @Override public String toString() {
@@ -84,6 +92,7 @@ public class CarInsurance {
         } else if (customer.getAge() >= 45 && customer.getAge() < 65) {
             premiumValue -= 100;
         }
+        this.premium = premiumValue;
         return premiumValue;
     }
     
@@ -97,13 +106,13 @@ public class CarInsurance {
      */
     public boolean isValidCarInsurance(CarInsurance customer, boolean validCard) {
         if (customer.getAge() >= 80) {
-            System.out.println("   ------------------------------------------ ");
-            System.out.println("Sorry, we cannot sell car insurance to people over 80 years old.");
-            System.out.println("   ------------------------------------------ ");
+            System.out.println("   ------------------------------------------------------------------ ");
+            System.out.println("    Sorry, we cannot sell car insurance to people over 80 years old.");
+            System.out.println("   ------------------------------------------------------------------ ");
             return false;
         } else if (!validCard) {
             System.out.println("   ------------------------------------------ ");
-            System.out.println("Sorry, your driving licence is invalid.");
+            System.out.println("     Sorry, your driving licence is invalid.");
             System.out.println("   ------------------------------------------ ");
             return false;
         }
@@ -122,11 +131,20 @@ public class CarInsurance {
     	int num;
     	try {
     		num = Integer.parseInt(age);
-    		return true;
+    		if (num>=18) {	
+    			return true;
+    		}
+    		else {
+    			System.out.println("   ---------------------------------------------------- ");
+    			System.out.println("     You must be of legal age to obtain car insurance");
+    			System.out.println("   ---------------------------------------------------- ");
+    			return false;}
     	}catch(Exception e) {
     		return false;
     	}
+    	
     }
+    
      
     /**
      * Validate the age entered by the user.
@@ -140,9 +158,10 @@ public class CarInsurance {
      */
     public static int checkInformation(String age, char sex, char married, char validCard) {
 		try {
-			if(!validateAge(age)) return -1;
+			if(!validateAge(age)) 
+				return -1;
 			
-			if(Integer.parseInt(age) > 0 && (sex == 'F' || sex == 'M') && (married == 'T' || married == 'F') && (validCard == 'T' || validCard == 'F')) {
+			if( validateAge(age) && (sex == 'F' || sex == 'M') && (married == 'T' || married == 'F') && (validCard == 'T' || validCard == 'F')) {
 				return 0;
 			}else {
 				return -1;
@@ -183,7 +202,8 @@ public class CarInsurance {
         char married = Character.toUpperCase(sc.next().charAt(0));
         System.out.print("     Please confirm if the driving license is valid (T) or invalid (F): ");
         char validCard = Character.toUpperCase(sc.next().charAt(0));
-
+        
+       
         if (CarInsurance.checkInformation(age, sex, married, validCard) >= 0) {
             CarInsurance premium = new CarInsurance(Integer.parseInt(age), sex,
                     CarInsurance.convertCharToBool(married));
@@ -194,9 +214,11 @@ public class CarInsurance {
                 System.out.println("   ------------------------------------------ ");
             }
         } else {
-            System.out.println("   ------------------------------------------ ");
+        	
+            System.out.println("   ------------------------------------------------- ");
             System.out.println("     Invalid data. Cannot proceed with calculation");
-            System.out.println("   ------------------------------------------ ");
+            System.out.println("   ------------------------------------------------- ");
+        	
         }
         sc.close();
     }
