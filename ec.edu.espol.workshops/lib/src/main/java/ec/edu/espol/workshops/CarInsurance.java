@@ -89,7 +89,7 @@ public class CarInsurance {
             premiumValue += 1500;
         } else if (customer.getSex() == 'F' || customer.getMarried()) {
             premiumValue -= 200;
-        } else if (customer.getAge() >= 45 && customer.getAge() < 65) {
+        } if (customer.getAge() >= 45 && customer.getAge() < 65) {
             premiumValue -= 100;
         }
         this.premium = premiumValue;
