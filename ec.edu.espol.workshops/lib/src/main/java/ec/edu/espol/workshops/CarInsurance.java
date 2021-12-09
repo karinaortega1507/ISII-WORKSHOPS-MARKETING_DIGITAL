@@ -18,7 +18,7 @@ public class CarInsurance {
     private int age;
     private char sex;
     private boolean married;
-    private int base = 600;
+    private int base = 600; //Se modifica la base a 600
 
     /** 
      * Construct the class object.
