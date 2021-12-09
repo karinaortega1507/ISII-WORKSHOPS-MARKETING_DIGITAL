@@ -18,8 +18,12 @@ public class CarInsurance {
     private int age;
     private char sex;
     private boolean married;
-    private int base = 500;
+
+  
     private int premium;
+
+    private int base = 600;
+
 
     public CarInsurance() {}
     
