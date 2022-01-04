@@ -104,4 +104,137 @@ public class BranchCoverageTest {
         System.out.println("The car insurance premium is: $ " + premium + "\n");
     }
     
+    /* ADITIONAL TESTS */
+    
+    // BC-006  
+    @Test
+    public void invalidCharactersToCheckInformation() {
+        String age = "20";
+        String invalidAge = "-20";
+        
+        char sex = 'M';
+        char invalidSex = 'P';
+        
+        char married = 'F';
+        char invalidMarried = 'P';
+        
+        char validCard = 'T';
+        char invalidCard = 'P';
+        
+        System.out.println("BC-006");
+        
+        // Invalid Sex
+        int res1 = CarInsurance.checkInformation(age, invalidSex, married, validCard);
+        assertEquals(-1, res1);
+        System.out.println("Invalid data. Cannot proceed with calculation"); 
+        
+        // Invalid Married
+        int res2 = CarInsurance.checkInformation(age, sex, invalidMarried, validCard);
+        assertEquals(-1, res2);
+        System.out.println("Invalid data. Cannot proceed with calculation"); 
+        
+        // Invalid ValidCard
+        int res3 = CarInsurance.checkInformation(age, sex, married, invalidCard);
+        assertEquals(-1, res3);
+        System.out.println("Invalid data. Cannot proceed with calculation"); 
+        
+        // Invalid Age
+        int res4 = CarInsurance.checkInformation(invalidAge, sex, married, invalidCard);
+        assertEquals(-1, res4);
+        System.out.println("Invalid data. Cannot proceed with calculation\n"); 
+    }
+    
+    // BC-007
+    @Test
+    public void getPremiumWithoutChanges() {
+        String age = "70";
+        char sex = 'M';
+        char married = 'F';
+        char validCard = 'T';
+        
+        int res = CarInsurance.checkInformation(age, sex, married, validCard);
+        assertEquals(0, res);
+        
+        CarInsurance p = new CarInsurance(Integer.parseInt(age), sex, CarInsurance.convertCharToBool(married));
+        
+        System.out.println("BC-007");
+        boolean validCI = p.isValidCarInsurance(p, CarInsurance.convertCharToBool(validCard));
+        assertTrue(validCI);
+        
+        int premium = CarInsurance.premiumCalculation(p);
+        assertEquals(500, premium);
+        
+        System.out.println("The car insurance premium is: $ " + premium + "\n");
+    }
+    
+    // BC-008
+    @Test
+    public void getPremiumMaleMarried() {
+        String age = "30";
+        char sex = 'M';
+        char married = 'T';
+        char validCard = 'T';
+        
+        int res = CarInsurance.checkInformation(age, sex, married, validCard);
+        assertEquals(0, res);
+        
+        CarInsurance p = new CarInsurance(Integer.parseInt(age), sex, CarInsurance.convertCharToBool(married));
+        
+        System.out.println("BC-008");
+        boolean validCI = p.isValidCarInsurance(p, CarInsurance.convertCharToBool(validCard));
+        assertTrue(validCI);
+        
+        int premium = CarInsurance.premiumCalculation(p);
+        assertEquals(300, premium);
+        
+        System.out.println("The car insurance premium is: $ " + premium + "\n");
+    }
+    
+    
+    // BC-009
+    @Test
+    public void getPremiumYoungMaleMarried() {
+        String age = "20";
+        char sex = 'M';
+        char married = 'T';
+        char validCard = 'T';
+        
+        int res = CarInsurance.checkInformation(age, sex, married, validCard);
+        assertEquals(0, res);
+        
+        CarInsurance p = new CarInsurance(Integer.parseInt(age), sex, CarInsurance.convertCharToBool(married));
+        
+        System.out.println("BC-009");
+        boolean validCI = p.isValidCarInsurance(p, CarInsurance.convertCharToBool(validCard));
+        assertTrue(validCI);
+        
+        int premium = CarInsurance.premiumCalculation(p);
+        assertEquals(300, premium);
+        
+        System.out.println("The car insurance premium is: $ " + premium + "\n");
+    }
+    
+    // BC-010
+    @Test
+    public void getPremiumYoungFemaleMarried() {
+        String age = "20";
+        char sex = 'F';
+        char married = 'T';
+        char validCard = 'T';
+        
+        int res = CarInsurance.checkInformation(age, sex, married, validCard);
+        assertEquals(0, res);
+        
+        CarInsurance p = new CarInsurance(Integer.parseInt(age), sex, CarInsurance.convertCharToBool(married));
+        
+        System.out.println("BC-010");
+        boolean validCI = p.isValidCarInsurance(p, CarInsurance.convertCharToBool(validCard));
+        assertTrue(validCI);
+        
+        int premium = CarInsurance.premiumCalculation(p);
+        assertEquals(300, premium);
+        
+        System.out.println("The car insurance premium is: $ " + premium + "\n");
+    }
+    
 }
