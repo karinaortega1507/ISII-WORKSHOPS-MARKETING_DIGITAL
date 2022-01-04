@@ -80,5 +80,28 @@ public class StatementCoverageTest {
         
         System.out.println("The car insurance premium is: $ " + premium + "\n");
     }
+    
+    // SC-005
+    @Test
+    public void testSC5() {
+        String age = "20";
+        char sex = 'M';
+        char married = 'F';
+        char validCard = 'T';
+        
+        int res = CarInsurance.checkInformation(age, sex, married, validCard);
+        assertEquals(0, res);
+        
+        CarInsurance p = new CarInsurance(Integer.parseInt(age), sex, CarInsurance.convertCharToBool(married));
+        
+        System.out.println("SC-005");
+        boolean validCI = p.isValidCarInsurance(p, CarInsurance.convertCharToBool(validCard));
+        assertTrue(validCI);
+        
+        int premium = p.premiumCalculation(p);
+        assertEquals(2000, premium);
+        
+        System.out.println("The car insurance premium is: $ " + premium + "\n");
+    }
 
 }
