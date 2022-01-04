@@ -10,7 +10,7 @@ public class PathCoverageTest {
 	public void testPath1() {
 		int expectedValue = 300;
 		int resultValue = 0;
-		CarInsurance objectpremium = new CarInsurance(18, 'f',
+		CarInsurance objectpremium = new CarInsurance(18, 'F',
 	            CarInsurance.convertCharToBool('T'));
 		resultValue = objectpremium.premiumCalculation(objectpremium);
 		assertEquals(expectedValue, resultValue);
@@ -18,20 +18,22 @@ public class PathCoverageTest {
 	
 	@Test
 	public void testPath2() {
-		String expectedMessage = "Invalid data. Cannot proceed with calculation";
-		String resultMessage = "";
-		resultMessage = String.valueOf(CarInsurance.checkInformation("0", 'M', 'T', 'T'));
-		assertEquals(expectedMessage, resultMessage);
+		int expectedResult = -1;
+		int actualResult = 0;
+		actualResult = CarInsurance.checkInformation("0", 'M', 'T', 'T');
+		 System.out.println("Invalid data. Cannot proceed with calculation");
+		assertEquals(expectedResult, actualResult);
 	}
 	
 	@Test
 	public void testPath3() {
 		int expectedValue = 300;
 		int resultValue = 0;
-		CarInsurance objectpremium = new CarInsurance(21, 'f',
-	            CarInsurance.convertCharToBool('F'));
-		resultValue = objectpremium.premiumCalculation(objectpremium);
-		assertEquals(expectedValue, resultValue);
+		int res = CarInsurance.checkInformation("18", 'M', 'F', 'T');
+        assertEquals(0, res);
+        CarInsurance premium = new CarInsurance(18, 'M', CarInsurance.convertCharToBool('T'));
+        resultValue = premium.premiumCalculation(premium);
+        assertEquals(expectedValue, resultValue);
 	}
 	
 	@Test
@@ -50,7 +52,7 @@ public class PathCoverageTest {
 		boolean resultValidCard;
 		CarInsurance objectpremium = new CarInsurance(85, 'F',
 	            CarInsurance.convertCharToBool('T'));
-		resultValidCard = objectpremium.isValidCarInsurance(objectpremium, true);
+		resultValidCard = objectpremium.isValidCarInsurance(objectpremium, true);	
 		assertEquals(expectedValidCard, resultValidCard);
 	}
 	
@@ -58,10 +60,11 @@ public class PathCoverageTest {
 	public void testPath6() {
 		int expectedValue = 200;
 		int resultValue = 0;
-		CarInsurance objectpremium = new CarInsurance(50, 'f',
-	            CarInsurance.convertCharToBool('T'));
-		resultValue = objectpremium.premiumCalculation(objectpremium);
-		assertEquals(expectedValue, resultValue);
+		int res = CarInsurance.checkInformation("50", 'F', 'T', 'T');
+        assertEquals(0, res);
+        CarInsurance premium = new CarInsurance(50, 'F', CarInsurance.convertCharToBool('T'));
+        resultValue = premium.premiumCalculation(premium);
+        assertEquals(expectedValue, resultValue);
 	}
 	
 	@Test
@@ -73,5 +76,19 @@ public class PathCoverageTest {
 		resultValue = objectpremium.premiumCalculation(objectpremium);
 		assertEquals(expectedValue, resultValue);
 	}
-
+	
+	@Test
+	public void testPath8() {
+		int expectedValue = 500;
+		int resultValue = 0;
+		boolean validCard;
+		CarInsurance objectpremium = new CarInsurance(65, 'M',
+	            CarInsurance.convertCharToBool('F'));
+		validCard = objectpremium.isValidCarInsurance(objectpremium, true);
+		assertEquals(true, validCard);
+		resultValue = objectpremium.premiumCalculation(objectpremium);
+		assertEquals(expectedValue, resultValue);
+	}
+		
+	
 }

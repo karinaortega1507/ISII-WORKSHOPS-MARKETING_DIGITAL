@@ -19,6 +19,8 @@ public class CarInsurance {
     private char sex;
     private boolean married;
     private int base = 500;
+    private int premium;
+
 
     /** 
      * Construct the class object.
@@ -63,6 +65,9 @@ public class CarInsurance {
         return base;
     }
 
+    public int getPremium() {
+        return this.premium;
+    }
     // METHODS
     @Override public String toString() {
         return "\nage: " + this.age + " sex: " + this.sex + " married: " + this.married;
@@ -79,12 +84,14 @@ public class CarInsurance {
         int premiumValue = base;
         if (customer.getAge() < 25 && customer.getSex() == 'M' && !customer.getMarried()) {
             premiumValue += 1500;
-        } else if (customer.getSex() == 'F' || customer.getMarried()) {
+        } if (customer.getSex() == 'F' || customer.getMarried()) {
             premiumValue -= 200;
-        } else if (customer.getAge() >= 45 && customer.getAge() < 65) {
+        } if (customer.getAge() >= 45 && customer.getAge() < 65) {
             premiumValue -= 100;
         }
-        return premiumValue;
+        this.premium = premiumValue;
+        return premiumValue; 
+       
     }
     
     /**
@@ -101,12 +108,12 @@ public class CarInsurance {
             System.out.println("Sorry, we cannot sell car insurance to people over 80 years old.");
             System.out.println("   ------------------------------------------ ");
             return false;
-        } else if (!validCard) {
+        } if (!validCard) {
             System.out.println("   ------------------------------------------ ");
             System.out.println("Sorry, your driving licence is invalid.");
             System.out.println("   ------------------------------------------ ");
             return false;
-        }
+        } 
         return true;
 
     }
@@ -149,8 +156,10 @@ public class CarInsurance {
 			}	
 		} catch (RuntimeException e) {
 			throw new RuntimeException("Couldn't process stuff", e);
+			
 		} catch (Exception e) {
 			throw new RuntimeException("Something failed!", e);
+			
 		}
 	}
     
