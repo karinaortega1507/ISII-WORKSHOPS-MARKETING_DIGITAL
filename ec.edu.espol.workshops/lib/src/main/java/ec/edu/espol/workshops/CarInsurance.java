@@ -79,10 +79,14 @@ public class CarInsurance {
         int premiumValue = base;
         if (customer.getAge() < 25 && customer.getSex() == 'M' && !customer.getMarried()) {
             premiumValue += 1500;
-        } else if (customer.getSex() == 'F' || customer.getMarried()) {
+        } if (customer.getSex() == 'F' || customer.getMarried()) {
             premiumValue -= 200;
-        } else if (customer.getAge() >= 45 && customer.getAge() < 65) {
+        } if (customer.getAge() >= 45 && customer.getAge() < 65) {
             premiumValue -= 100;
+        } if (customer.getMarried() && (customer.getAge() > 30 && customer.getAge() < 60)) {
+            premiumValue -= 50;
+        } if (!customer.getMarried() && customer.getSex() == 'F' && customer.getAge() > 60) {
+            premiumValue -= 50;
         }
         return premiumValue;
     }
@@ -103,7 +107,7 @@ public class CarInsurance {
             return false;
         } else if (!validCard) {
             System.out.println("   ------------------------------------------ ");
-            System.out.println("Sorry, your driving licence is invalid.");
+            System.out.println("Sorry, your driving license is invalid.");
             System.out.println("   ------------------------------------------ ");
             return false;
         }
